@@ -1,0 +1,313 @@
+/* REUSABLE COMPONENTS */
+.container {
+    max-width: 1100px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.headline {
+    font-size: 40px;
+    color: #707070;
+    margin-bottom: 70px;
+}
+
+.navbar-li a{
+    color: #707070;
+    font-size: 20px;
+    font-family: 'Archy EDT';
+}
+.navbar-li {
+    margin:25px 30px;
+}
+
+/* HEADER */
+
+.logo {
+    width: 102px;
+}
+.logo img{
+    width: 100%;
+}
+
+
+.search {
+    margin-top: 20px;
+    width: 15.5px;
+    padding:0 0 0 30px;
+}
+
+
+
+/* BASIC CONTENT */
+
+.top-image img{
+    width: 100%;
+}
+
+/* MAIN ARTICLE */
+
+.live-img {
+    max-width: 296px;
+}
+.live-img img{
+    width: 100%;
+}
+
+.article-headline {
+    color: #707070;
+    font-size: 30px;
+    padding:20px 0 33px 12px;
+    font-family: 'Archy EDT';
+}
+
+.article-para {
+    color: #707070;
+    font-size: 18px;
+    width: 259px;
+    padding:0 0 89px 12px;
+    
+}
+
+.see-more {
+    position: absolute;
+    right: 13px;
+    bottom: 13px;
+    /* bottom 35px(an nebismier gazrdil zomas sadac gamokvetilad sheetyoba) rom vutiteb popular-section-is mesame suratis more ufro zemot adis, roca yvelas erti klasi aqvs da danarcheni yvela ertnairadaa*/
+}
+
+.see-more a {
+    font-size: 24px;
+    color: #707070;
+    font-family: 'Archy EDT';
+}
+
+.load-more {
+    width: 145px;
+    margin:52px auto 52px auto;
+    
+    border-bottom: 1px solid #707070;
+}
+.load-more a{
+    font-size: 30px;
+    color: #707070;
+    font-family: 'Archy EDT';
+}
+/* CONTAINER BOXES */
+.header-content {
+    padding: 52px 0;
+}
+
+.article-contents {
+    width: 296px;
+    position: relative;
+    border:1px solid #707070;
+}
+
+.popular-section {
+    margin:138px 0 38px 0;
+}
+
+.recently-added-section {
+    margin:138px 0 68px 0;
+}
+
+.footer-content {
+    background-color: #2E2E2E;
+    padding: 56px 0;
+}
+
+/* FOOTER */
+
+.fb-logo {
+    padding:0 20px;
+    margin-right: 20px;
+}
+
+.address-info h5{
+    font-size: 19px;
+    color: #F2F2F2;
+    font-family: 'Archy EDT';
+    padding: 7px 0;
+}
+
+.address-info p{
+    font-size: 13px;
+    color: #F2F2F2;
+    font-family: 'Archy EDT';
+    padding: 7px 0;
+}
+
+.contact-info h5{
+    font-size: 19px;
+    color: #F2F2F2;
+    font-family: 'Archy EDT';
+    padding: 7px 0;
+}
+
+.contact-info p{
+    font-size: 13px;
+    color: #F2F2F2;
+    font-family: 'Archy EDT';
+    padding: 7px 0;
+}
+
+
+/* STYLES FOR PHONE */
+.navbar-phone, .footer-for-phone {
+    display: none;
+}
+/* HEADER */
+.phone-logo img{
+    width: 100%;
+}
+.search-phone img{
+    width: 100%;
+}
+/* FOOTER */
+.phone-address-info {
+    font-size: 19px;
+    color: #FFFFFF;
+}
+.phone-contact-info {
+    font-size: 19px;
+    color: #FFFFFF;
+}
+.phone-social-web {
+    margin:43px 0 23px 0;
+}
+.phone-social-web img{
+    width: 30%;
+    
+}
+.fb-logo-ph {
+    margin-right: 15px;  
+}
+.phone-address-info {
+    justify-content: center;
+    margin:20px auto;
+}
+.phone-address-info h5,.phone-contact-info h5{
+    font-size: 19px;
+    padding: 0 50px;
+    font-family: 'Archy EDT';
+    
+}
+.phone-address-info,.phone-contact-info p{
+    font-size: 13px;
+    padding:0 40px;
+    font-family: 'Archy EDT';
+}
+.phone-contact-info {
+    margin:20px auto;
+    justify-content: center;
+}
+
+/* RESPONSIVE STYLES */
+@media (max-width: 768px) {
+    .navbar-phone {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        flex-wrap: wrap;
+        padding:0 10px;
+    }
+    .navbar, .logo, .footer-content {
+        display: none;
+    }
+    .phone-search {
+        padding: 20px;
+    }
+     .headline {
+        width: 100%;
+        margin: 0px auto;
+        font-size: 150%;
+    }
+    .header-content, 
+    .popular-section, 
+    .recently-added-section {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+        padding: 20px;
+        margin:0 auto;
+    }
+    .footer-for-phone {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #2E2E2E;
+        width: 100%;
+    }
+    
+    .article-contents {
+        position: relative;
+        border: 1px solid #707070;
+        margin-top: 32px;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .see-more {
+        position: absolute;
+        right: 20%;
+        width: 40%;
+    }
+}
+
+@media (max-width: 480px){
+    .navbar-phone {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        flex-wrap: wrap;
+        padding:0 10px;
+    }
+    .navbar, .logo, .footer-content {
+        display: none;
+    }
+    .phone-search {
+        padding: 20px;
+    }
+    
+    .headline {
+        width: 100%;
+        margin: 0px auto;
+        font-size: 150%;
+    }
+    .header-content, 
+    .article-contents, 
+    .popular-section, 
+    .recently-added-section {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+        padding: 20px;
+        margin:0 auto;
+    }
+    .footer-for-phone {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #2E2E2E;
+        width: 100%;
+    }
+    
+    .article-contents {
+        position: relative;
+        border: 1px solid #707070;
+        margin-top: 32px;
+    }
+    .see-more {
+        position: absolute;
+        right: 20%;
+        width: 10%;
+    }
+    
+}
