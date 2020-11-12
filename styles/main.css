@@ -319,6 +319,11 @@ html,body {
 }
 
 @media (max-width: 480px){
+    
+    .live-img {
+        width: 100%;
+    }
+    
     .navbar-phone {
         display: -webkit-box;
         display: -ms-flexbox;
